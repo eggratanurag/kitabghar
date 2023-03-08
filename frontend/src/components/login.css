@@ -24,22 +24,19 @@
     
     margin-top: 10px;
 }
-
+.inputOutline {
+    margin-bottom: 10px;
+}
 .login__registerButton {
-    margin-left: 5px;
-    width: 85%;
+  
+    width: 100%;
     background-color: #ff735d !important;
     color: white;
 }
 .login__registerButton:hover {
     background-color: #ED8D8D  !important;
 }
-.googleAuthDiv {
-   margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 @media (max-width: 1400px) {
     .mainDivForLogin {
         width: 80vw;

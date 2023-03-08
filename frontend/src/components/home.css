@@ -161,8 +161,11 @@ margin-left: 13rem;
 
  
 
+.colored-section h1 {
+  color: #e6b0a1;
+}
 .colored-section {
-  background-color: #e6b0a1;
+ background-color: #2d4e5a;
 }
 .checkOutBtnDiv button {
  

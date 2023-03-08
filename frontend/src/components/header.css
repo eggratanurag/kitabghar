@@ -37,7 +37,7 @@ nav {
         background-color: #375a64 ;
         z-index: 1000;
         transform: translate(-100%);
-        transition: transform 150ms ease-in;
+        transition: transform 250ms ease;
     }
     .primary-navigation[data-visible="true"] {
         transform: translate(0%);

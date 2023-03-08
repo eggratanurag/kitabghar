@@ -52,16 +52,18 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const faders = document.querySelectorAll(".divForIcon");
+    const faders = document.getElementsByClassName("divForIcon");
 
-    faders.forEach((fader) => {
+    for(var fader of faders) {
       appearOnScroll.observe(fader);
-    });
+    }
+  
 
-    const sliders = document.querySelectorAll(".slideIn");
-    sliders.forEach((slider) => {
-      appearOnScroll.observe(slider);
-    });
+    const sliders = document.getElementsByClassName("slideIn");
+      for(var slider of sliders) {
+        appearOnScroll.observe(slider);
+      }
+   
   });
 //                         animation useeffects
   
@@ -137,7 +139,7 @@ return (
             </div>
 
           </section>
-          <section style={{backgroundColor: "#ff735d"}}>
+          <section style={{backgroundColor: "#e6b0a1"}}>
             <div className="container">
               <h1 style={{color:"#1a2e35", textDecoration: "underline", marginBottom:"3rem"}} className="ldPageHeading">50% Policy.</h1>
               <h1 className="fiftytext">the only policy of bookShelf is to sell the books at 50% of the actual price of the book or maybe donate them if possible.</h1>

@@ -7,8 +7,11 @@ import axios from "axios";
 import UserProvider from "./context/userProvider";
 import {WishlistProvider,OrdersProvider} from "./context/productProvider";
 
+// const PORT = import.meta.env.PORT || 5000;
+// console.log(`http://localhost:${PORT}/`)
+axios.defaults.baseURL = `http://localhost:5000`;
 
-axios.defaults.baseURL = `https://kitabghar.onrender.com`;
+// axios.defaults.baseURL = `https://kitabghar.onrender.com`;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

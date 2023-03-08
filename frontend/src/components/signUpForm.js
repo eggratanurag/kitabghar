@@ -127,7 +127,7 @@ export default function Signup({ collectData, loading, btnText, checkData,mode,u
               <FormLabel>State</FormLabel>
               <Input
                 value={state}
-                type="email"
+                type="text"
                 placeholder="Enter Your State"
                 className="inputOutline"
                 onChange={(e) => setState(e.target.value)}
@@ -214,19 +214,9 @@ export default function Signup({ collectData, loading, btnText, checkData,mode,u
               {btnText}
             </Button>
               {btnText==="Login" && 
-              <div className="googleAuthDiv">
-              
-
-              <button
-              id="authButton"
-              // className="sideButtons"
-         
-            >
-              <GoogleIcon />
-            </button>
               
               <Button onClick={()=> Navigate('/user/signup')} className='login__registerButton'>or register to us</Button>
-              </div>
+             
               }
               </>
               }
